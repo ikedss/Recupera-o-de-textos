@@ -24,11 +24,7 @@ doc3 = nlp(soup3.text)
 doc4 = nlp(soup4.text)
 doc5 = nlp(soup5.text)
 
-sentencas1 = []
-sentencas2 = []
-sentencas3 = []
-sentencas4 = []
-sentencas5 = []
+sentencas = []
 
 def get_sentencas(lsentencas, doc):
     contador = 0
@@ -37,10 +33,10 @@ def get_sentencas(lsentencas, doc):
       contador += 1
     return lsentencas
 
-sentencas1 = get_sentencas(sentencas1, doc1)
-sentencas2 = get_sentencas(sentencas2, doc2)
-sentencas3 = get_sentencas(sentencas3, doc3)
-sentencas4 = get_sentencas(sentencas4, doc4)
-sentencas5 = get_sentencas(sentencas5, doc5)
+sentencas1 = get_sentencas(sentencas, doc1)
+sentencas2 = get_sentencas(sentencas, doc2)
+sentencas3 = get_sentencas(sentencas, doc3)
+sentencas4 = get_sentencas(sentencas, doc4)
+sentencas5 = get_sentencas(sentencas, doc5)
 
-print(sentencas1, sentencas2, sentencas3, sentencas4, sentencas5)
+print(sentencas)
